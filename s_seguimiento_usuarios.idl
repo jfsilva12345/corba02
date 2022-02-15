@@ -1,0 +1,12 @@
+module sop_corba{
+  
+  interface GestionNotificaciones{
+	struct NotificacionDTO {
+		string nombreCompleto;
+    	string ocupacion;
+	};
+
+    void notificarRegistro(in NotificacionDTO objNotificacion);
+   };
+ };
+
